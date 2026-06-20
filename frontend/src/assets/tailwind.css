@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  font-family: 'Segoe UI', Roboto, 'Noto Naskh Arabic', system-ui, -apple-system, 'Helvetica Neue', Arial;
+}
