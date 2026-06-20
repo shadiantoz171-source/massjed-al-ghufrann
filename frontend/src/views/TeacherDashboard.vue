@@ -5,12 +5,12 @@
       <div class="p-4 bg-white rounded shadow">
         <h3 class="font-bold">قائمة الطلاب</h3>
         <p class="text-sm text-gray-500">عرض وإدارة بيانات الطلاب</p>
-        <button class="mt-3 bg-blue-500 text-white px-3 py-1 rounded">عرض الطلاب</button>
+        <button @click="goStudents" class="mt-3 bg-blue-500 text-white px-3 py-1 rounded">عرض الطلاب</button>
       </div>
       <div class="p-4 bg-white rounded shadow">
         <h3 class="font-bold">إدخال التسميع</h3>
         <p class="text-sm text-gray-500">اختر طالباً ثم صفحات أو سور لتسجيلها</p>
-        <button class="mt-3 bg-blue-500 text-white px-3 py-1 rounded">أدخل تسميع</button>
+        <button @click="goEnter" class="mt-3 bg-blue-500 text-white px-3 py-1 rounded">أدخل تسميع</button>
       </div>
     </div>
   </div>
@@ -18,6 +18,15 @@
 
 <script>
 export default {
-  name: 'TeacherDashboard'
+  name: 'TeacherDashboard',
+  methods: {
+    goEnter() {
+      this.$router.push('/teacher/enter-recitation')
+    },
+    goStudents() {
+      // placeholder: would open students list
+      alert('عرض الطلاب - قيد التطوير')
+    }
+  }
 }
 </script>
